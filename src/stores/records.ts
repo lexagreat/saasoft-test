@@ -24,7 +24,6 @@ export const useRecordsStore = defineStore('records', {
             ((record.type == 'local' && Boolean(record.password)) || record.type == 'LDAP'),
         ),
       )
-      console.log('saveToLS records', localStorage.records)
     },
     getFromLS() {
       const saved = localStorage.getItem('records')
